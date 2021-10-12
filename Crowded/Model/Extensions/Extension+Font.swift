@@ -6,6 +6,15 @@
 //
 
 import UIKit
+import SwiftUI
+
+extension Font {
+    
+    static func helveticaBold(size: CGFloat) -> Font {
+        
+        return Font.custom("HelveticaNeue-Bold", size: size)
+    }
+}
 
 extension UIFont {
         
@@ -30,6 +39,11 @@ extension UIFont {
     class func helvetica(size: CGFloat) -> UIFont {
         
         return UIFont(name: "HelveticaNeue", size: size)!
+    }
+    
+    class func helveticaLight(size: CGFloat) -> UIFont {
+        
+        return UIFont(name: "HelveticaNeue-Light", size: size)!
     }
     
     class func helveticaBold(size: CGFloat) -> UIFont {
