@@ -47,7 +47,7 @@ struct RemoteImage: View {
             
     }
 
-    init(url: String, loading: Image = Image("device"), failure: Image = Image(systemName: "multiply.circle")) {
+    init(url: String, loading: Image = Image("gear-icon"), failure: Image = Image(systemName: "multiply.circle")) {
         _loader = ObservedObject(wrappedValue: Loader(url: url))
         self.loading = loading
         self.failure = failure
@@ -61,7 +61,7 @@ struct RemoteImage: View {
             return failure
         default:
             if let image = UIImage(data: loader.data) {
-                return Image(uiImage: image)
+                return Image(uiImage: image).resizable()
             } else {
                 return failure
             }
