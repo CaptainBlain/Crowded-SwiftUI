@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C0C91352715BFF3000FEFD4 /* MainViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C91342715BFF3000FEFD4 /* MainViewHeader.swift */; };
+		6C0C91372715C9A7000FEFD4 /* SettingsSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C91362715C9A7000FEFD4 /* SettingsSwiftUIView.swift */; };
+		6C0C91392715CA9E000FEFD4 /* CitySelectSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C91382715CA9E000FEFD4 /* CitySelectSwiftUIView.swift */; };
 		6C26565F256675310096FD5D /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C26565E256675310096FD5D /* NetworkController.swift */; };
 		6C26567C25668ADB0096FD5D /* LocationHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C26567B25668ADB0096FD5D /* LocationHeader.swift */; };
 		6C265686256691370096FD5D /* BusinessDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C265685256691370096FD5D /* BusinessDetailViewController.swift */; };
@@ -39,9 +42,9 @@
 		6CC42E60270B542F0037AFDF /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC42E5F270B542F0037AFDF /* City.swift */; };
 		6CC42E62270C44230037AFDF /* CitySelectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC42E61270C44230037AFDF /* CitySelectViewModel.swift */; };
 		6CC42E64270C4FD50037AFDF /* Extension+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC42E63270C4FD50037AFDF /* Extension+Sequence.swift */; };
-		6CC42E72270F327F0037AFDF /* MainViewSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC42E71270F327F0037AFDF /* MainViewSwiftUI.swift */; };
+		6CC42E72270F327F0037AFDF /* MainSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC42E71270F327F0037AFDF /* MainSwiftUIView.swift */; };
 		6CC42E75270F36140037AFDF /* BusinessItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC42E74270F36140037AFDF /* BusinessItem.swift */; };
-		6CC42E77270F36880037AFDF /* BusinessDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC42E76270F36880037AFDF /* BusinessDetailView.swift */; };
+		6CC42E77270F36880037AFDF /* BusinessDetailSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC42E76270F36880037AFDF /* BusinessDetailSwiftUIView.swift */; };
 		6CC42E79270F37200037AFDF /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC42E78270F37200037AFDF /* RemoteImage.swift */; };
 		6CD6CCE2257927FE00B78C98 /* crowded.json in Resources */ = {isa = PBXBuildFile; fileRef = 6CD6CCE1257927FE00B78C98 /* crowded.json */; };
 		6CD6CCFC257935F700B78C98 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD6CCFB257935F700B78C98 /* Business.swift */; };
@@ -78,6 +81,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C0C91342715BFF3000FEFD4 /* MainViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewHeader.swift; sourceTree = "<group>"; };
+		6C0C91362715C9A7000FEFD4 /* SettingsSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSwiftUIView.swift; sourceTree = "<group>"; };
+		6C0C91382715CA9E000FEFD4 /* CitySelectSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectSwiftUIView.swift; sourceTree = "<group>"; };
 		6C26565E256675310096FD5D /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		6C26567B25668ADB0096FD5D /* LocationHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHeader.swift; sourceTree = "<group>"; };
 		6C265685256691370096FD5D /* BusinessDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailViewController.swift; sourceTree = "<group>"; };
@@ -110,9 +116,9 @@
 		6CC42E5F270B542F0037AFDF /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		6CC42E61270C44230037AFDF /* CitySelectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectViewModel.swift; sourceTree = "<group>"; };
 		6CC42E63270C4FD50037AFDF /* Extension+Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Sequence.swift"; sourceTree = "<group>"; };
-		6CC42E71270F327F0037AFDF /* MainViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewSwiftUI.swift; sourceTree = "<group>"; };
+		6CC42E71270F327F0037AFDF /* MainSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSwiftUIView.swift; sourceTree = "<group>"; };
 		6CC42E74270F36140037AFDF /* BusinessItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessItem.swift; sourceTree = "<group>"; };
-		6CC42E76270F36880037AFDF /* BusinessDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailView.swift; sourceTree = "<group>"; };
+		6CC42E76270F36880037AFDF /* BusinessDetailSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailSwiftUIView.swift; sourceTree = "<group>"; };
 		6CC42E78270F37200037AFDF /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		6CD6CCE1257927FE00B78C98 /* crowded.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = crowded.json; sourceTree = "<group>"; };
 		6CD6CCFB257935F700B78C98 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
@@ -212,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				6C26577A2567A6AB0096FD5D /* SettingsViewController.swift */,
+				6C0C91362715C9A7000FEFD4 /* SettingsSwiftUIView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -237,7 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				6CE98A37256642EF00C8BB2F /* MainViewController.swift */,
-				6CC42E71270F327F0037AFDF /* MainViewSwiftUI.swift */,
+				6CC42E71270F327F0037AFDF /* MainSwiftUIView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -246,7 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				6C265685256691370096FD5D /* BusinessDetailViewController.swift */,
-				6CC42E76270F36880037AFDF /* BusinessDetailView.swift */,
+				6CC42E76270F36880037AFDF /* BusinessDetailSwiftUIView.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -273,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				6CC42E57270B51E40037AFDF /* CitySelectViewController.swift */,
+				6C0C91382715CA9E000FEFD4 /* CitySelectSwiftUIView.swift */,
 			);
 			path = "City Select";
 			sourceTree = "<group>";
@@ -296,6 +304,7 @@
 		6CC42E73270F35560037AFDF /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				6C0C91342715BFF3000FEFD4 /* MainViewHeader.swift */,
 				6CC42E74270F36140037AFDF /* BusinessItem.swift */,
 				6CC42E78270F37200037AFDF /* RemoteImage.swift */,
 			);
@@ -583,7 +592,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C557AF926FC7BEF00BB818D /* Contact.swift in Sources */,
-				6CC42E77270F36880037AFDF /* BusinessDetailView.swift in Sources */,
+				6CC42E77270F36880037AFDF /* BusinessDetailSwiftUIView.swift in Sources */,
 				6C265686256691370096FD5D /* BusinessDetailViewController.swift in Sources */,
 				6C26565F256675310096FD5D /* NetworkController.swift in Sources */,
 				6C557AF326FC798600BB818D /* JsonHelper.swift in Sources */,
@@ -593,11 +602,13 @@
 				6C26567C25668ADB0096FD5D /* LocationHeader.swift in Sources */,
 				6CE98A3E256642EF00C8BB2F /* Crowded.xcdatamodeld in Sources */,
 				6CE98A38256642EF00C8BB2F /* MainViewController.swift in Sources */,
+				6C0C91372715C9A7000FEFD4 /* SettingsSwiftUIView.swift in Sources */,
 				6C557B0926FDE62300BB818D /* BusinessWebsiteTableViewCell.swift in Sources */,
 				6CC42E50270B47FF0037AFDF /* BusinessViewModel.swift in Sources */,
 				6CE98B1A25666E9500C8BB2F /* FeaturedCollectionViewCell.swift in Sources */,
 				6C2656AD2566B4800096FD5D /* BusinessImageHeaderTableViewCell.swift in Sources */,
 				6C557AF526FC7BC100BB818D /* Address.swift in Sources */,
+				6C0C91352715BFF3000FEFD4 /* MainViewHeader.swift in Sources */,
 				6C557AFB26FC8B2900BB818D /* Image.swift in Sources */,
 				6CE98AFD2566654500C8BB2F /* Extension+UIViewController.swift in Sources */,
 				6CC42E5B270B52050037AFDF /* CitySelectTableViewCell.swift in Sources */,
@@ -609,6 +620,7 @@
 				6CC42E5E270B53E20037AFDF /* CitySelectDelegate.swift in Sources */,
 				6CC42E58270B51E40037AFDF /* CitySelectViewController.swift in Sources */,
 				6CE98A34256642EF00C8BB2F /* AppDelegate.swift in Sources */,
+				6C0C91392715CA9E000FEFD4 /* CitySelectSwiftUIView.swift in Sources */,
 				6C557B0326FCA99200BB818D /* Extension+Font.swift in Sources */,
 				6C26576425679A860096FD5D /* Constant.swift in Sources */,
 				6CC42E79270F37200037AFDF /* RemoteImage.swift in Sources */,
@@ -618,7 +630,7 @@
 				6CC42E62270C44230037AFDF /* CitySelectViewModel.swift in Sources */,
 				6CD6CCFC257935F700B78C98 /* Business.swift in Sources */,
 				6C557AF726FC7BDE00BB818D /* OpeningTimes.swift in Sources */,
-				6CC42E72270F327F0037AFDF /* MainViewSwiftUI.swift in Sources */,
+				6CC42E72270F327F0037AFDF /* MainSwiftUIView.swift in Sources */,
 				6C2656C72566C0E90096FD5D /* ReusableViewEnum.swift in Sources */,
 				6C557B0526FCA9AB00BB818D /* Extension+Color.swift in Sources */,
 				6C26576F2567A6560096FD5D /* SettingsTableViewCell.swift in Sources */,
