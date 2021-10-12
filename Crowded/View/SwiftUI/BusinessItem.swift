@@ -10,34 +10,40 @@ import SwiftUI
 struct BusinessItem: View {
     
     var business: Business
-    
+
     var body: some View {
-        NavigationLink(destination: BusinessDetailView()) {
+        
+        NavigationLink(destination: BusinessDetailSwiftUIView()) {
             ZStack(alignment: Alignment(horizontal: .leading, vertical: .top), content: {
-                RoundedRectangle(cornerRadius: 2)
-                    .foregroundColor(.init("cellBackgroundColor"))
-                    .shadow(color: .init(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.2)), radius: 2, x: 0, y: 0)
+ 
                 GeometryReader { geometry in
-                    VStack(alignment: .leading, spacing: 10) {
+                    VStack(alignment: .leading, spacing: 0) {
                         RemoteImage(url: business.images.logo)
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: geometry.size.width * 0.5, height: 100)
-                            .cornerRadius(4)
-                            .padding(EdgeInsets(top: 10, leading: 10, bottom: 0, trailing: 0))
-                            .background(Color.black)
+                            .scaledToFit()
+                            .frame(width: geometry.size.width, height: geometry.size.width)
+                            .frame(maxHeight: 200)
+                            .cornerRadius(12) // Inner corner radius
+                            .padding(1) // Width of the border
+                            .background(Color(business.settings.getBackgroundColour()))
+                            .cornerRadius(12) // Outer corner radius
+                        
                         Text(business.businessName)
-                            .font(.custom("HelveticaNeue", size: 14.0))
-                            .minimumScaleFactor(0.01)
+                            .font(.custom("HelveticaNeue", size: 15.0))
+                            .minimumScaleFactor(10)
                             .foregroundColor(.init(#colorLiteral(red: 0.02022366143, green: 0.03400618655, blue: 0.02071806246, alpha: 1)))
-                            .padding(EdgeInsets(top: 10, leading: 10, bottom: 1, trailing: 0))
+                            .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
+                            .autocapitalization(.words)
                         Text(business.tagString)
-                            .font(.custom("HelveticaNeue", size: 17.0))
-                            .foregroundColor(.init(#colorLiteral(red: 0.02022366143, green: 0.03400618655, blue: 0.02071806246, alpha: 1)))
-                            .padding(EdgeInsets(top: 0, leading: 10, bottom: 30, trailing: 10))
+                            .font(.custom("HelveticaNeue", size: 12.0))
+                            .foregroundColor(.init(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
+                            .padding(EdgeInsets(top: 4, leading: 0, bottom: 0, trailing: 0))
+                            .autocapitalization(.words)
                         
                     }
                 }
-            }).padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
+            })
+            .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 250)
         }
     }
 }
