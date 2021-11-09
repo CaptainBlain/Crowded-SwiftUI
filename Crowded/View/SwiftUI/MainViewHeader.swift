@@ -26,7 +26,6 @@ struct MainViewHeader: View {
                 .sheet(isPresented: $showingSheet) {
                     CitySelectSwiftUIView()
                 }
-                
             }
             .frame(maxWidth: .infinity,
                    alignment: .leading)
@@ -42,6 +41,7 @@ struct MainViewHeader: View {
             .sheet(isPresented: $showingSheet) {
                 SettingsSwiftUIView()
             }
+            .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 6))
             
         }
         

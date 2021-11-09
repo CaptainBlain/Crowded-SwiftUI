@@ -10,6 +10,7 @@ import Foundation
 struct Business: Decodable {
     
     enum CodingKeys: String, CodingKey {
+        case id
         case businessName = "businessName"
         case businessDesc = "businessDesc"
         case businessAddress = "businessAddress"
@@ -21,6 +22,7 @@ struct Business: Decodable {
         case featured
     }
     
+    var id: Int
     var businessName: String
     var businessDesc: String
     var businessAddress: Address

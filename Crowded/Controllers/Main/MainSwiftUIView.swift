@@ -14,29 +14,34 @@ struct MainSwiftUIView: View {
     var body: some View {
         
         let businesses = viewModel.businesses
-   
+        
+        NavigationView {
             ScrollView {
                 MainViewHeader()
                 
                 LazyVGrid(columns: [GridItem(.flexible())], alignment: .center, spacing: 6) {
                     
                     let business = businesses[0]
-                    RemoteImage(url: business.images.logo)
-                        .scaledToFit()
-                        .frame(maxHeight: 300)
-                        .cornerRadius(12) //Inner Corner radiuus
-                        .background(Color(business.settings.getBackgroundColour()))
-                        .cornerRadius(12) // Outer corner radius
+                    NavigationLink(destination: BusinessDetailSwiftUIView(businessId: business.id)) {
+                        RemoteImage(url: business.images.logo)
+                            .scaledToFit()
+                            .frame(maxHeight: 300)
+                            .cornerRadius(12) //Inner Corner radiuus
+                            .background(Color(business.settings.getBackgroundColour()))
+                            .cornerRadius(12)// Outer corner radius
+                            .padding(3)
+                            
+                    }.navigationBarHidden(true)
                     
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 6) {
-                        ForEach((1...businesses.count - 1), id: \.self) {
+                        ForEach((1..<businesses.count), id: \.self) {
                             BusinessItem(business: businesses[$0])
                         }
                     }
                     .frame(minHeight: 0, maxHeight: .infinity, alignment: .top)
                 }
-            }.padding(.all, 10)
-
+            }
+        }
     }
 }
 
