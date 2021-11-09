@@ -31,7 +31,7 @@ struct MainSwiftUIView: View {
                             .cornerRadius(12)// Outer corner radius
                             .padding(3)
                             
-                    }.navigationBarHidden(true)
+                    }.navigationBarHidden(true).navigationBarTitle(Text(""), displayMode: .inline)
                     
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 6) {
                         ForEach((1..<businesses.count), id: \.self) {
